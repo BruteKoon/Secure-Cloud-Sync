@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<!-- 상단 메뉴바 UI -->
+
+<BorderPane maxHeight="400" maxWidth="600.0" minHeight="394.0" minWidth="577.0" prefHeight="394.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.securecloudsync.ui.controller.MainLayoutController">
+    <top>
+        <MenuBar fx:id="menuBar" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false">
+                    <MenuItem mnemonicParsing="false" onAction="#didClickReinput" text="Folder Password Change" />
+                    <graphic>
+                        <Label text="LOGOUT" textFill="ROYALBLUE" />
+                    </graphic>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+    </center>
+
+</BorderPane>

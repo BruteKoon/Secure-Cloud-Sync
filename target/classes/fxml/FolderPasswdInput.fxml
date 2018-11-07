@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.securecloudsync.ui.controller.LoginController">
+    <!-- 암호화 폴더 패스워드 입력 UI-->
+    <Pane fx:id="folderPasswdLayout" layoutY="-13.0" prefHeight="413.0" prefWidth="600.0"
+          style="-fx-background-color: white;" visible="true">
+        <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="40.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <image>
+                    <Image url="@img/securecloudsync.png"/>
+                </image>
+            </ImageView>
+            <Button fx:id="startButton" defaultButton="true" layoutX="247.0" layoutY="279.0" mnemonicParsing="false"
+                    onAction="#didClickStartButton" prefHeight="0.0" prefWidth="130.0"
+                    style="-fx-background-color: royalblue; -fx-background-radius: 4;" text="Start" textFill="WHITE"/>
+            <PasswordField fx:id="folderpasswd" layoutX="245.0" layoutY="234.0">
+                <font>
+                    <Font name="Algerian" size="12.0"/>
+                </font>
+            </PasswordField>
+            <Label layoutX="243.0" layoutY="206.0" style="-fx-text-fill: royalblue;" text="Secure Folder Password">
+                <font>
+                    <Font name="Bell MT" size="15.0"/>
+                </font>
+                <effect>
+                    <Blend/>
+                </effect>
+            </Label>
+            <Label fx:id="checkPasswd" layoutX="386.0" layoutY="241.0" text="패스워드를 입력해 주세요" textFill="#dd0909"
+                   visible="false"/>
+            <Label layoutX="250.0" layoutY="80.0" text="Cloud Encrypytion broker service" textFill="#096ee1"/>
+            <Label layoutX="255.0" layoutY="110.0" text="Secure Cloud Sync" textFill="#0d00ff">
+                <font>
+                    <Font size="26.0"/>
+                </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="377.0" text="Corporation by SCS" textAlignment="CENTER"
+                   textFill="ROYALBLUE">
+                <font>
+                    <Font size="10.0"/>
+                </font>
+            </Label>
+        </children>
+    </Pane>
+</AnchorPane>
